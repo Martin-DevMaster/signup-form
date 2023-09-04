@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="imgContainer">
+        <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="" class='mainImage'>
+        <div class="logoContainer">
+            <img src="./odin-lined.png" alt="odin" class="odinLogo">
+            <h2>ODIN</h2>
+            </div>
+            <p class="imageCredit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
+                on <a href="https://unsplash.com/photos/25xggax4bSA">Unisplash</a></p>
+    </div>
+    <div class="card">
+    <p>This is not a real online service! But you will sign up either way.</p>
+    <p>Atleast you can try, please?</p>
+    <form>
+        <fieldset>
+        <h1>Let's do this!</h1>
+        <div class="userInfoContainer">
+        <div class="firstNameContainer">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" pattern="[A-Z][a-zA-Z]+" required>
+        </div>
+        <div class="lastNameContainer">
+        <label for="last-name">LAST NAME</label>
+        <input type="text" name="last-name" id="last-name" pattern="[A-Z][a-zA-Z]+" required>
+        </div>
+        <div class="emailContainer">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="phoneContainer">
+        <label for="phone">PHONE NUMBER</label>
+        <input type="text" name="phone" id="phone" pattern="^[0-9]+$" required>
+        </div>
+        <div class="passwordContainer">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password"  required>
+            <span></span>
+        </div>
+        <div class="passwordConfirmContainer">
+        <label for="passwordConfirm">CONFIRM PASSWORD</label>
+        <input type="password" name="password" id="passwordConfirm" required>
+        </div>
+    </div>
+    </fieldset>
+    
+<button type="submit">Create Account</button>
+    </form>
+    <a href="#">Already have an account? Log in</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
